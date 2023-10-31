@@ -3,9 +3,7 @@ import { resolve } from 'path'
 import * as dotenv from 'dotenv'
 dotenv.config()
 
-// const { LOG_DIR, NODE_ENV } = await getParams()
 const folder = resolve('.').split('/').at(-1)
-console.log(folder);
 let LOG_DIR = `/var/log/apps/${folder}`
 
 export const create = (() => {
